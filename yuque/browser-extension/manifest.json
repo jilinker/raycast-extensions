@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Yuque Local Bridge",
+  "description": "Send the minimum Yuque session fields to the local Raycast extension",
+  "version": "0.1.1",
+  "action": {
+    "default_title": "Connect Yuque to Raycast"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["cookies"],
+  "host_permissions": ["https://*.yuque.com/*", "http://127.0.0.1/*"]
+}
